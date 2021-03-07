@@ -1,13 +1,13 @@
-# [[docs]]
-#   name = "Getting Started"
-#   weight = 10
-#   identifier = "getting-started"
-#   url = "/docs/getting-started/"
+[[docs]]
+  name = "Getting Started"
+  weight = 10
+  identifier = "getting-started"
+  url = "/docs/getting-started/"
 
-# [[main]]
-#   name = "Docs"
-#   url = "/docs/getting-started/introduction/"
-#   weight = 10
+[[main]]
+  name = "Docs"
+  url = "/docs/getting-started/introduction/"
+  weight = 10
 
 # [[main]]
 #   name = "Blog"
