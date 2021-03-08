@@ -44,4 +44,4 @@ alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/
 
 # Edit Page
 docsRepo = "https://github.com/fnrun/website"
-editPage = false
+editPage = true
