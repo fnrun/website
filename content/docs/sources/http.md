@@ -30,7 +30,7 @@ source.
 | `certFile`          | String  | `""`         | Path to certificate file for establishing HTTP connections. `keyFile` must also be set to use HTTPS.                      |
 | `keyFile`           | String  | `""`         | Path to key file for establishing HTTP connections. `certFile` must also be set to use HTTPS.                             |
 | `treatOutputAsBody` | Boolean | `false`      | Indicates whether an output from an fn should be set as a response body instead of interpreting the output as a response. |
-| `defaultHeaders`    | Object  | Empty object | Entries are header / value pairs. Applied when fn output does not provide headers.                                        |
+| `outputHeaders`     | Object  | Empty object | Entries are header / value pairs. Applied when fn output does not provide headers.                                        |
 | `ignoreOutput`      | Boolean | `false`      | Indicates the output from the fn should not be included in the http response.                                             |
 
 
@@ -57,7 +57,7 @@ the output into an http response and return it.
 
 | Key          | Type    | Description                                                                                     |
 |--------------|---------|-------------------------------------------------------------------------------------------------|
-| `headers`    | Object  | Header/Value pairs. If none are provided, defaults to configured `defaultHeaders`.              |
+| `headers`    | Object  | Header/Value pairs. If none are provided, defaults to configured `outputHeaders`.              |
 | `body`       | Object  | An object to print to string and return as response body. Ignored if `ignoreOutput` is enabled. |
 | `statusCode` | Integer | The response status code. Defaults to `200 OK`.                                                 |
 
