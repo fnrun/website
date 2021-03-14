@@ -7,19 +7,19 @@ titleAddition = "Build and run business functions with ease"
 description = "fnrun is a project that helps you build and execute business function runners"
 
 ## Open Graph + Twitter Cards
-# images = ["doks.png"]
-# twitterSite = "henkverlinde"
-# twitterCreator = "henkverlinde"
+images = ["fnrun.png"]
+twitterSite = "fnrundev"
+twitterCreator = "fnrundev"
 # facebookAuthor = "verlinde.henk"
 # facebookPublisher = "verlinde.henk"
-# ogLocale = "en_US"
+ogLocale = "en_US"
 
 ## JSON-LD
-# schemaType = "Organization"
-# schemaLogo = "logo-doks.png"
-# schemaTwitter = "https://twitter.com/henkverlinde"
+schemaType = "Organization"
+schemaLogo = "fnrun.png"
+schemaTwitter = "https://twitter.com/fnrundev"
 # schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-# schemaGitHub = "https://github.com/fnrun"
+schemaGitHub = "https://github.com/fnrun"
 # schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -40,7 +40,7 @@ footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\
 
 # Alert
 alert = false
-alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
+alertText = "Like fnrun? <a class=\"alert-link\" href=\"https://github.com/fnrun/fnrun/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
 # Edit Page
 docsRepo = "https://github.com/fnrun/website"
