@@ -9,6 +9,11 @@
   url = "/docs/getting-started/introduction/"
   weight = 10
 
+[[main]]
+  name = "Tutorial"
+  weight = 11
+  url = "/tutorial/introduction"
+
 # [[main]]
 #   name = "Blog"
 #   url = "/blog/"

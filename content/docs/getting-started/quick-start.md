@@ -97,4 +97,6 @@ a business function, specified configuration for our application, and executed
 it inside a container. However, we have just scratched the surface of what you
 can do with fnrun. There are several other sources, middlewares, and fns that
 ship with fnrunner, and they are all documented on this site. You can even
-create your own and build custom runners that meet your specific needs.
+create your own and build custom runners that meet your specific needs. If you
+would like a more comprehensive guide, please check out the 
+[tutorial](/tutorial/introduction).
