@@ -156,7 +156,7 @@ RUN gfortran -static -o momentum ./momentum.f90
 
 FROM alpine:latest AS fnrunner-fetcher
 
-ENV FNRUNNER_VERSION=0.1.0
+ENV FNRUNNER_VERSION=0.2.0
 RUN wget "https://github.com/fnrun/fnrun/releases/download/v$FNRUNNER_VERSION/fnrunner" \
   && wget "https://github.com/fnrun/fnrun/releases/download/v$FNRUNNER_VERSION/licenses.zip" \
   && chmod +x ./fnrunner

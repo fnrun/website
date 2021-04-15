@@ -3,7 +3,7 @@ title : "http"
 description: "Reference documentation for the http source"
 lead: "The http source receives inputs via an http server."
 date: 2021-03-01T01:59:40+00:00
-lastmod: 2021-03-01T01:59:40+00:00
+lastmod: 2021-04-14T01:59:40+00:00
 draft: false
 images: []
 menu:
@@ -23,15 +23,16 @@ Inputs section. It will convert outputs into HTTP responses.
 The following table describes the keys on the configuration object for the http
 source.
 
-| Key                 | Type    | Default      | Description                                                                                                               |
-|---------------------|---------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| `address`           | String  | `:8080`      | The network address for the http server to listen on                                                                      |
-| `base64EncodeBody`  | Boolean | `false`      | Indicates whether incoming requests are base64-encoded                                                                    |
-| `certFile`          | String  | `""`         | Path to certificate file for establishing HTTP connections. `keyFile` must also be set to use HTTPS.                      |
-| `keyFile`           | String  | `""`         | Path to key file for establishing HTTP connections. `certFile` must also be set to use HTTPS.                             |
-| `treatOutputAsBody` | Boolean | `false`      | Indicates whether an output from an fn should be set as a response body instead of interpreting the output as a response. |
-| `outputHeaders`     | Object  | Empty object | Entries are header / value pairs. Applied when fn output does not provide headers.                                        |
-| `ignoreOutput`      | Boolean | `false`      | Indicates the output from the fn should not be included in the http response.                                             |
+| Key                   | Type     | Default      | Description                                                                                                               |
+|-----------------------|----------|--------------|---------------------------------------------------------------------------------------------------------------------------|
+| `address`             | String   | `:8080`      | The network address for the http server to listen on                                                                      |
+| `base64EncodeBody`    | Boolean  | `false`      | Indicates whether incoming requests are base64-encoded                                                                    |
+| `certFile`            | String   | `""`         | Path to certificate file for establishing HTTP connections. `keyFile` must also be set to use HTTPS.                      |
+| `keyFile`             | String   | `""`         | Path to key file for establishing HTTP connections. `certFile` must also be set to use HTTPS.                             |
+| `treatOutputAsBody`   | Boolean  | `false`      | Indicates whether an output from an fn should be set as a response body instead of interpreting the output as a response. |
+| `outputHeaders`       | Object   | Empty object | Entries are header / value pairs. Applied when fn output does not provide headers.                                        |
+| `ignoreOutput`        | Boolean  | `false`      | Indicates the output from the fn should not be included in the http response.                                             |
+| `shutdownGracePeriod` | Duration | `10s`        | The period to wait for the server to shutdown before terminating it forcefully                                            |
 
 
 ## Inputs

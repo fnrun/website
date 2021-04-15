@@ -81,12 +81,12 @@ This configuration creates a deployment that will run our application and create
 Next, we will deploy our application to AWS Lambda. Lambda provides several mechanisms for deploying functions. We will deploy to a Lambda with a custom runtime.
 
 ### Preparing the function
-To support this scenario, fnrun provides a source for lambda. The source will deserialize an event body from JSON by default and provide it to the middleware pipeline. Copy the following into a file called `lambda.yaml`. We will use this as our fnrunner configuration file.
+To support this scenario, fnrun provides a source for lambda. The source will deserialize an event from JSON by default and provide it to the middleware pipeline. Copy the following into a file called `lambda.yaml`. We will use this as our fnrunner configuration file.
 
 ```yaml
 source: fnrun.source/lambda
 middleware:
-  - fnrun.middleware/key: body
+  - fnrun.middleware/key: event
   - fnrun.middleware/json:
       output: serialize
   - fnrun.middleware/jq:
