@@ -30,7 +30,7 @@ Your first step should be to update the module name in `go.mod` with a name appr
 The two most important files in the project are `main.go` and `Makefile`. The main.go file contains the code to read a configuration file, bootstrap a runner, apply the configuration, and run the runner. The Makefile contains build commands for Linux, macOS, and Windows. The default action is to build all three.
 
 ## Writing middleware
-Now that we have our project set up, we can start to build a middleware. fnrun provides interfaces for each of the major components. For our scenario, we will provide a new implementation of the Middleware interface in the github.com/fnrun/fnrun/pkg/run package.
+Now that we have our project set up, we can start to build a middleware. fnrun provides interfaces for each of the major components. For our scenario, we will provide a new implementation of the Middleware interface in the github.com/fnrun/fnrun/run package.
 
 > If you look at the structure of fnrun, you will notice that we split out fn and run top-level packages. The Fn interface is in the fn package, and the other interfaces are in the run package. 
 >
@@ -146,8 +146,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/sqs"
-	"github.com/fnrun/fnrun/pkg/fn"
-	"github.com/fnrun/fnrun/pkg/run"
+	"github.com/fnrun/fnrun/fn"
+	"github.com/fnrun/fnrun/run"
 )
 
 type sqsMiddleware struct {
