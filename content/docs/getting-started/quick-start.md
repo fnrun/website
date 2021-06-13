@@ -61,7 +61,7 @@ into a file called `Dockerfile`.
 ```shell
 FROM python:buster
 
-ENV FNRUNNER_VERSION=0.3.0
+ENV FNRUNNER_VERSION=0.4.0
 RUN wget "https://github.com/fnrun/fnrun/releases/download/v${FNRUNNER_VERSION}/fnrunner_${FNRUNNER_VERSION}_linux_amd64.tar.gz" \
   && tar zxf ./fnrunner_${FNRUNNER_VERSION}_linux_amd64.tar.gz
 
