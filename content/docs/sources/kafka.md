@@ -1,7 +1,7 @@
 ---
 title : "kafka"
 description: "Reference documentation for the kafka source"
-lead: "The http source receives inputs from Kafka."
+lead: "The kafka source receives inputs from Kafka."
 date: 2021-03-01T01:59:40+00:00
 lastmod: 2021-04-14T01:59:40+00:00
 draft: false
